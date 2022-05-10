@@ -165,7 +165,7 @@ while True:
         for row in table.rows:
             for cell in row.cells:
                 for paragraph in cell.paragraphs:
-                    paragraphs.append(paragraph) #C:\Users\elbed\Desktop
+                    paragraphs.append(paragraph)
 
     translator = Translator()
 
