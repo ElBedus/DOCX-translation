@@ -143,7 +143,8 @@ def text_translation() -> list:
             else:
                 translation = translator.translate(para.text,src=sourceLanguageCode,dest=targetLanguageCode)
                 translatedText.append(translation.text)
-        except: pass
+        except:
+            translatedText.append("")
     
     return translatedText
 
@@ -165,7 +166,7 @@ while True:
         for row in table.rows:
             for cell in row.cells:
                 for paragraph in cell.paragraphs:
-                    paragraphs.append(paragraph)
+                    paragraphs.append(paragraph) #C:\Users\elbed\Desktop
 
     translator = Translator()
 
